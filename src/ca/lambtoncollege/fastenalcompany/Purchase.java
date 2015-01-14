@@ -8,7 +8,7 @@ package ca.lambtoncollege.fastenalcompany;
 
 /**
  *
- * @author c0640916
+ * @author JIAJUN XUE <nicoxue0324@gmail.com>
  */
 public class Purchase {
     private int ProductID,Quantity;
