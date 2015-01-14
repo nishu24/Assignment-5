@@ -52,7 +52,7 @@ public class OrderIT {
     public void testToString() {
         System.out.println("toString");
         Order instance = new Order();
-        String expResult = "ERROR:No TimeRecevied";
+        String expResult = "Order{customer=null, timeRecevied=, timeProcessed=, timeFulfilled=, purchase=null, note=}";
         String result = instance.toString();
         assertEquals(expResult, result);
     }

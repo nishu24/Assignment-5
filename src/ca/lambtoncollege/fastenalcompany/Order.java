@@ -21,6 +21,12 @@ public class Order {
     private String note;
 
     public Order() {
+        this.customer = null;
+        this.timeRecevied = "";
+        this.timeProcessed = "";
+        this.timeFulfilled = "";
+        this.purchase = null;
+        this.note = "";
     }
 
     public Order(Customer customer, String timeRecevied, String timeProcessed, String timeFulfilled, List<Purchase> purchase, String note) {
@@ -82,10 +88,7 @@ public class Order {
 
     @Override
     public String toString() {
-        if(timeRecevied==null||timeRecevied.isEmpty())
-            return "ERROR:No TimeRecevied";
-        else
-            return "Order{" + "customer=" + customer + ", timeRecevied=" + timeRecevied + ", timeProcessed=" + timeProcessed + ", timeFulfilled=" + timeFulfilled + ", purchase=" + purchase + ", note=" + note + '}';
+        return "Order{" + "customer=" + customer + ", timeRecevied=" + timeRecevied + ", timeProcessed=" + timeProcessed + ", timeFulfilled=" + timeFulfilled + ", purchase=" + purchase + ", note=" + note + '}';
     }
  
 }
