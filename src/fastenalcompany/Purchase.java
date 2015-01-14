@@ -37,9 +37,8 @@ public class Purchase {
         this.Quantity = Quantity;
     }
     
+    @Override
     public String toString(){
-        String s;
-        s = "productID :"+ProductID +", quantity :"+Quantity;
-        return s;
+        return "productID :"+ProductID +", quantity :"+Quantity;
     }
 }
