@@ -17,9 +17,9 @@ import static org.junit.Assert.*;
  *
  * @author shitong zhao <alpseinstein@gmail.com>
  */
-public class OrderTest {
+public class OrderIT {
     
-    public OrderTest() {
+    public OrderIT() {
     }
     
     @BeforeClass
@@ -38,9 +38,10 @@ public class OrderTest {
     public void tearDown() {
     }
 
-    // TODO add test methods here.
-    // The methods must be annotated with annotation @Test. For example:
-    //
-    // @Test
-    // public void hello() {}
+    @Test
+    public void testSomeMethod() {
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+    
 }
