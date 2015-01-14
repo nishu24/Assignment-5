@@ -82,8 +82,8 @@ public class Order {
 
     @Override
     public String toString() {
-        if(timeRecevied.isEmpty())
-            return "";
+        if(timeRecevied==null||timeRecevied.isEmpty())
+            return "ERROR:No TimeRecevied";
         else
             return "Order{" + "customer=" + customer + ", timeRecevied=" + timeRecevied + ", timeProcessed=" + timeProcessed + ", timeFulfilled=" + timeFulfilled + ", purchase=" + purchase + ", note=" + note + '}';
     }

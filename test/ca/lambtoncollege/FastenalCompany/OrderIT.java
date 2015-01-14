@@ -6,6 +6,10 @@
 
 package ca.lambtoncollege.FastenalCompany;
 
+import ca.lambtoncollege.fastenalcompany.Customer;
+import ca.lambtoncollege.fastenalcompany.Order;
+import ca.lambtoncollege.fastenalcompany.Purchase;
+import java.util.List;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -38,8 +42,15 @@ public class OrderIT {
     public void tearDown() {
     }
 
+   
+    
+
+    /**
+     * Test of toString method, of class Order.
+     */
     @Test
-    public void testBlankTimeReceviedShouldReturnErrorMessage() {
+    public void testToString() {
+        System.out.println("toString");
         Order instance = new Order();
         String expResult = "ERROR:No TimeRecevied";
         String result = instance.toString();
