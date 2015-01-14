@@ -6,6 +6,9 @@
 
 package ca.lambtoncollege.fastenalcompany;
 
+import java.util.ArrayDeque;
+import java.util.Queue;
+
 /**
  *
  * @author shitong zhao <alpseinstein@gmail.com>

@@ -40,71 +40,15 @@ public class PurchaseTest {
     }
 
     /**
-     * Test of getProductID method, of class Purchase.
-     */
-    @Test
-    public void testGetProductID() {
-        System.out.println("getProductID");
-        Purchase instance = new Purchase();
-        int expResult = 0;
-        int result = instance.getProductID();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of getQuantity method, of class Purchase.
-     */
-    @Test
-    public void testGetQuantity() {
-        System.out.println("getQuantity");
-        Purchase instance = new Purchase();
-        int expResult = 0;
-        int result = instance.getQuantity();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of setProductID method, of class Purchase.
-     */
-    @Test
-    public void testSetProductID() {
-        System.out.println("setProductID");
-        int ProductID = 0;
-        Purchase instance = new Purchase();
-        instance.setProductID(ProductID);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of setQuantity method, of class Purchase.
-     */
-    @Test
-    public void testSetQuantity() {
-        System.out.println("setQuantity");
-        int Quantity = 0;
-        Purchase instance = new Purchase();
-        instance.setQuantity(Quantity);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
      * Test of toString method, of class Purchase.
      */
     @Test
     public void testToString() {
         System.out.println("toString");
         Purchase instance = new Purchase();
-        String expResult = "";
+        String expResult = "productID :0, quantity :0";
         String result = instance.toString();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
     
 }
