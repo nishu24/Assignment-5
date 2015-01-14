@@ -39,9 +39,11 @@ public class OrderIT {
     }
 
     @Test
-    public void testSomeMethod() {
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+    public void testBlankTimeReceviedShouldReturnErrorMessage() {
+        Order instance = new Order();
+        String expResult = "ERROR:No TimeRecevied";
+        String result = instance.toString();
+        assertEquals(expResult, result);
     }
     
 }
