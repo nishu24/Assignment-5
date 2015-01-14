@@ -39,4 +39,11 @@ public class Customer {
         this.customerName = customerName;
     }
 
+    @Override
+    public String toString() {
+        return "customerID:" + customerID + ",customerName:" + customerName;
+    }
+    
+    
+
 }
