@@ -37,9 +37,9 @@ public class Purchase {
         this.Quantity = Quantity;
     }
     
-    public String toString(int ProductID,int Quantity){
+    public String toString(){
         String s;
-        s = "productID :"+ProductID +"quantity :"+Quantity;
+        s = "productID :"+ProductID +", quantity :"+Quantity;
         return s;
     }
 }
