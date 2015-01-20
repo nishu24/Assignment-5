@@ -28,40 +28,9 @@ public class FastenalCompany {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Queue<Order> orders = new ArrayDeque<>();
-        orderArrives(orders);
-        connect();
-    }
-    
-    public static void orderArrives(Queue<Order> orders){
-        Order order = new Order();
-        Customer customer = new Customer(1,"jim");
-        order.setCustomer(customer);
-        List<Purchase>  purchases= new ArrayList<>();
-        purchases.add(new Purchase(1,1));
-        order.setPurchase(purchases);
-        orders.add(order);
+        OrderManager om = new OrderManager();
+        om.orderArrives();
+        om.connect();
     }
 
-    public static void connect(){
-        DBManager db= new DBManager();
-        Connection conn = null;
-        try {
-            conn = db.getMysqlConn();
-            String query = "select * from sample";
-            Statement stmt = conn.createStatement();
-            ResultSet rs = stmt.executeQuery(query);
-            while(rs.next()){
-                System.out.println(rs.getString("name")+"\t"+rs.getInt("age"));
-            }
-        } catch (SQLException ex) {
-            Logger.getLogger(FastenalCompany.class.getName()).log(Level.SEVERE, null, ex);
-        } finally {
-            try {
-                if(conn!=null)conn.close();
-            } catch (SQLException ex) {
-                Logger.getLogger(FastenalCompany.class.getName()).log(Level.SEVERE, null, ex);
-            }
-        }
-    }
 }
