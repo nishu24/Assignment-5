@@ -105,7 +105,7 @@ public class ProductServlet extends HttpServlet {
             ResultSet rs = stmt.executeQuery(db_query);
             while(rs.next()){
                 name=rs.getString("name");
-                out.println(name+"\t"+rs.getInt("age"));  
+                out.println(name+"\t"+rs.getInt("quantity"));  
             }
         } catch (SQLException ex) {
             ex.printStackTrace();
