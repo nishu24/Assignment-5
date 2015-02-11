@@ -28,7 +28,11 @@ public class DBManager {
             conn=DriverManager.getConnection(db_url,db_username,db_password);
         } catch (ClassNotFoundException ex) {
             ex.printStackTrace();
-        }
+        } catch (SQLException e) {
+		System.out.println("Connection Failed! Check output console");
+		e.printStackTrace();
+
+	}
         return conn;
     }
 }
