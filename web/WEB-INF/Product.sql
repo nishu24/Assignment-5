@@ -21,3 +21,4 @@ CREATE TABLE IF NOT EXISTS `product` (
 TRUNCATE TABLE `product`;
 INSERT INTO `product`(`productid`, `name`, `description`, `quantity`) VALUES (null,"Stone","Greate Stone",12);
 INSERT INTO `product`(`productid`, `name`, `description`, `quantity`) VALUES (null,"Nisarg","General Product",50);
+INSERT INTO `product`(`productid`, `name`, `description`, `quantity`) VALUES (null,"Harsh","Material Products",60);
