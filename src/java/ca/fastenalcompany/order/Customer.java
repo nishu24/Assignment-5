@@ -20,8 +20,8 @@ public class Customer {
     }
 
     public Customer() {
-        customerID=0;
-        customerName="";
+        customerID = 0;
+        customerName = "";
     }
 
     public int getCustomerID() {
